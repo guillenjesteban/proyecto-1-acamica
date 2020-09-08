@@ -68,8 +68,6 @@ input[type="checkbox"]:checked ~ ul {
     padding-top: 3px;
 }
 
-/*añadi comentario para probar github*/
-
 /*checkbox transparente y en primer plano*/
 .menu input {
     display: block;
