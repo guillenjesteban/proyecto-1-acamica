@@ -136,6 +136,11 @@ input:checked ~ ul {
 
 }
 
+/* comienza header */
+header {
+    width: 100vw;
+    height: 70vh;
+}
 h1 {
     font-family: 'IBM Plex Sans', monotype;
     font-size: 36px;
@@ -157,7 +162,27 @@ h2 {
     padding-left: 5%;
 
 }  
+/* cambiar a medium la tipografia en button, cambiar en libreria html tmb */
+button {
+    font-family: 'IBM Plex Mono', monotype;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: #060A24;
+    letter-spacing: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    background-color: #00F3BB;
+    text-transform: uppercase;
+    border: none;
+    margin: 5%;
+    width: 90%;
+    height: 20%;
+    max-width: 320px;
 
+
+}
 .h2episodios {
     color: white;
     text-align: left;
@@ -173,6 +198,7 @@ h2 {
     text-align: center;
 
 }
+
 
 h3 {
     font-family: 'IBM Plex Sans';
@@ -210,26 +236,7 @@ p {
     margin-right: 5%;
 
 }   
-/* cambiar a medium la tipografia en button, cambiar en libreria html tmb */
-button {
-    font-family: 'IBM Plex Mono', monotype;
-    font-weight: bold;
-    font-size: 16px;
-    color: #060A24;
-    letter-spacing: 0;
-    display: inline-block;
-    text-align: center;
-    line-height: 22px;
-    background-color: #00F3BB;
-    text-transform: uppercase;
-    border: none;
-    margin: 5%;
-    width: 90%;
-    padding: 5% 0 5% 0;
 
-
-
-}
 .sectionskew {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skewY(-8deg);
