@@ -1,60 +1,77 @@
-
-
 body {
     background-color: white;
     width: 100vw;
     height: 100vh;
-    padding: 0;
     margin: 0;
 
 }
 
 nav {
     overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
 }
 
-.logoicon {
-    margin: 5%;
-}
-
-.logo {
-    float: left;
-}
-
-.menu {
-    float: right;
+a {
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .menu ul {
     /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
     width: 100%;
     position: absolute;
-    /* top: 45px; */
-    top: 0;
     right: 0;
-    padding-top: 45px;
+    margin-top: 5%;
     overflow: hidden;
     list-style: none;
-    height: 0px;
+    height: 0;
     transition: height 0.5s ease;
+    z-index: 3;
 }
 .menu  ul li {
     position: relative;
 } 
-.menu  ul li:hover {
-    background: #5a5a5a;
-} 
+
 .menu ul li a {
     position: relative;
+    text-align: left;
     text-decoration: none;
-    color: #000;
-    padding: 16px 5%;
+    color: white;
+    opacity: 0.56;
+    padding: 0;
+    margin: 0;
     line-height: 28px;
     display: block;
 }
 .menu  ul li a:hover {
     color: #fff;
 } 
+
+label {
+    display: none;
+    position: absolute;
+    margin: 25%;
+    
+}
+
+li {
+    display: block;
+    background: #0000EC;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 5%;
+    list-style: none;
+    font-family: 'IBM Plex Mono', monotype;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+}
+
+
 /*animación del menu que se desplega*/
 input[type="checkbox"]:checked ~ ul {
     height: 240px;
@@ -63,9 +80,6 @@ input[type="checkbox"]:checked ~ ul {
     -moz-transition: height 0.5s ease-in-out;
     -o-transition: height 0.5s ease-in-out;
     -webkit-transition: height 0.5s ease-in-out;
-}
-.menu {
-    padding-top: 3px;
 }
 
 /*checkbox transparente y en primer plano*/
@@ -111,14 +125,8 @@ input[type="checkbox"]:checked ~ ul {
     transform: rotate(-45deg) translate(1px, 0px);
 }
 
-ul {
-    /* display:none; */
-    padding: 0;
-    height: 0;
-}
-
 input:checked ~ ul {
-    /* display: block; */
+    display: block;
     height: 240px;
     transform: translateX(0);
     transition: height 0.5s ease-in-out;
@@ -126,30 +134,6 @@ input:checked ~ ul {
     -o-transition: height 0.5s ease-in-out;
     -webkit-transition: height 0.5s ease-in-out;
 
-}
-
-/* input {
-    display: none;
-} */
-
-label {
-    display: none;
-    float: right;
-    margin: 5%;
-    
-
-}
-
-li {
-    display: block;
-    background: #0000EC;
-    width:300px;
-    padding: 10px;
-    list-style: none;
-    font-family: 'IBM Plex Mono', monotype;
-    font-size: 16px;
-    color: white;
-    line-height: 28px;
 }
 
 h1 {
