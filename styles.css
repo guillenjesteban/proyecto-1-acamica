@@ -143,6 +143,7 @@ header {
 }
 h1 {
     font-family: 'IBM Plex Sans', monotype;
+    font-weight: 400;
     font-size: 36px;
     color: #060A24;
     line-height: 42px;
@@ -152,6 +153,7 @@ h1 {
 
 h2 {
     font-family: 'IBM Plex Sans', monotype;
+    font-weight: 400;
     font-size: 36px;
     color: #060A24;
     letter-spacing: 0;
@@ -163,7 +165,7 @@ h2 {
 /* cambiar a medium la tipografia en button, cambiar en libreria html tmb */
 button {
     font-family: 'IBM Plex Mono', monotype;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     text-decoration: none;
     color: #060A24;
@@ -244,7 +246,7 @@ div.podcast {
 
 h3 {
     font-family: 'IBM Plex Sans';
-    font-weight: bold;
+    font-weight: 600;
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
@@ -266,6 +268,7 @@ h3 {
 
 p {
     font-family: 'IBM Plex Mono', monotype;
+    font-weight: 400;
     font-size: 14px;
     color: #060A24;
     letter-spacing: 0;
