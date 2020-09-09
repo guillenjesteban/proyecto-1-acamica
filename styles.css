@@ -158,8 +158,6 @@ h2 {
     line-height: 42px;
     max-width: 80%;
     margin-left: 5%;
-    padding-top: 10%;
-    padding-left: 5%;
 
 }  
 /* cambiar a medium la tipografia en button, cambiar en libreria html tmb */
@@ -181,15 +179,61 @@ button {
     height: 20%;
     max-width: 320px;
 
+}
+
+/* comienza seccion podcasts */
+section {
+    margin: 15% 0 0 0;
+}
+
+.sectionskew {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-5deg);
+    padding: 10% 0 50% 0;
 
 }
+
+.sectioncontainer {
+    transform: skewY(5deg);
+}
+
 .h2episodios {
     color: white;
     text-align: left;
-    padding-top: 20%;
-    margin-left: 3%;
-    margin-bottom: 7%;
+    margin-left: 7% 0 7% 0;
 
+
+}
+
+@media screen and (min-width: 320px) {
+
+div.podcastflex-cointainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+
+}
+
+div.podcast {
+      flex-basis: calc(100%/2);
+      justify-content: space-between;
+      margin: 0;
+      float: left;
+      width: 384px;
+
+}
+
+} 
+
+.podcast {
+    margin: 5%;
+    max-width: 584px;
+    max-height: 232px;
+    width: 90%;
 
 }
 
@@ -237,26 +281,8 @@ p {
 
 }   
 
-.sectionskew {
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skewY(-8deg);
-    height: 1203.5px;
-    margin: 0;
 
-}
 
-.sectioncontainer {
-    transform: skewY(8deg);
-    width: 320px;
-    height: 1203.5px;
-    margin: 0;
-}
-
-.podcast {
-    margin: 2%;
-    display: block;
-
-}
 .tachado {
     text-decoration: line-through;
 } 
@@ -278,14 +304,14 @@ p {
 
 .skewdos {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skewY(-10deg);
+    transform: skewY(-5deg);
     margin-top: 20%;
 
 
 }
 
 .ultimasnovedadescontainer {
-    transform: skewY(10deg);
+    transform: skewY(5deg);
     padding-bottom: 30%;
 
 
