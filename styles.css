@@ -189,7 +189,7 @@ section {
 .sectionskew {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skewY(-5deg);
-    padding: 10% 0 50% 0;
+    padding: 10% 0 100% 0;
 
 }
 
@@ -211,19 +211,17 @@ div.podcastflex-cointainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0;
-    width: 100vw;
 
 }
 
 div.podcast {
       flex-basis: calc(100%/2);
-      justify-content: space-between;
-      margin: 0;
+      margin: 3%;
       float: left;
-      width: 384px;
+      width: 90%;
+      height: 90%;
 
 }
 
