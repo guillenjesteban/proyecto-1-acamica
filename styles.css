@@ -13,7 +13,30 @@ nav {
     justify-content: space-between;
     padding: 5%;
 }
+p {
+    font-family: 'IBM Plex Mono', monotype;
+    font-weight: 400;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left;
+    display: block;
+    max-width: 100rem;
+    margin-top: -10px;
+    margin-left: 5%;
+    margin-right: 5%;
 
+}   
+
+h3 {
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
 a {
     text-align: left;
     padding: 0;
@@ -139,7 +162,7 @@ input:checked ~ ul {
 /* comienza header */
 header {
     width: 100vw;
-    height: 70vh;
+    /* height: 70vh; */
 }
 h1 {
     font-family: 'IBM Plex Sans', monotype;
@@ -185,18 +208,7 @@ button {
 
 /* comienza seccion podcasts */
 section {
-    margin: 15% 0 0 0;
-}
-
-.sectionskew {
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skewY(-5deg);
-    padding: 10% 0 100% 0;
-
-}
-
-.sectioncontainer {
-    transform: skewY(5deg);
+    margin: 0;
 }
 
 .h2episodios {
@@ -207,33 +219,28 @@ section {
 
 }
 
-@media screen and (min-width: 320px) {
-
-div.podcastflex-cointainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+.sectionskew {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    padding: 10% 0 50% 0;
 
 }
+
 
 div.podcast {
-      flex-basis: calc(100%/2);
-      margin: 3%;
-      float: left;
-      width: 90%;
-      height: 90%;
-
-}
-
-} 
-
-.podcast {
     margin: 5%;
     max-width: 584px;
     max-height: 232px;
     width: 90%;
+
+}
+
+/* comienza seccion iphone */
+
+div.sectioniphoneflex-container {
+    margin-left: 5%;
+    padding-top: -15%;
+    position: absolute;
 
 }
 
@@ -243,20 +250,21 @@ div.podcast {
 
 }
 
-
-h3 {
-    font-family: 'IBM Plex Sans';
-    font-weight: 600;
-    font-size: 24px;
-    color: #060A24;
-    letter-spacing: 0;
-    text-align: center;
-}
-.iphone {
-    width: 100%;
-    margin-bottom: 0%;
-    margin-top: -10%;
+div.imageniphone {
     position: relative;
+    width: 100vw;
+    max-width: 90%;
+    text-align: center;
+    max-width: 457.6px;
+    margin-top: -5%;
+    
+}
+
+img.iphone {
+    width: 90%;
+    min-width: 320px;
+    max-width: 457.6px;
+    padding:0;
 
 }
 
@@ -265,24 +273,6 @@ h3 {
     display: block;
 
 }
-
-p {
-    font-family: 'IBM Plex Mono', monotype;
-    font-weight: 400;
-    font-size: 14px;
-    color: #060A24;
-    letter-spacing: 0;
-    line-height: 22px;
-    text-align: left;
-    display: block;
-    max-width: 100rem;
-    margin-top: -10px;
-    margin-left: 5%;
-    margin-right: 5%;
-
-}   
-
-
 
 .tachado {
     text-decoration: line-through;
@@ -345,3 +335,38 @@ a {
 
 
 }
+
+@media screen and (min-width: 320px) {
+
+    div.podcastflex-cointainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    div.podcast {
+          flex-basis: calc(100%/2);
+          margin: 3%;
+          float: left;
+          width: 90%;
+          height: 90%;
+    
+    }
+
+    div.sectioniphoneflex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.dedondevenimos {
+        float:left;
+        flex-basis: calc(100%/2);
+        max-width: 50%;
+
+    }
+    } 
