@@ -237,10 +237,12 @@ div.podcast {
 
 /* comienza seccion iphone */
 
+
 div.sectioniphoneflex-container {
     margin-left: 5%;
     padding-top: -15%;
-    position: absolute;
+    /* position: absolute; */
+
 
 }
 
@@ -251,7 +253,7 @@ div.sectioniphoneflex-container {
 }
 
 div.imageniphone {
-    position: relative;
+    /* position: relative; */
     width: 100vw;
     max-width: 90%;
     text-align: center;
@@ -267,42 +269,54 @@ img.iphone {
     padding:0;
 
 }
+/* comienza seccion grilla de imagenes */
 
-.estelar {
-    width: 100%;
-    display: block;
+div.invitadosestelares {
+    /* position: absolute; */
+    margin: 0;
+
+
+}
+
+img.estelar {
+    max-width:450px;
+    /* position: relative;  */
+    margin-right: 0;
 
 }
 
 .tachado {
     text-decoration: line-through;
 } 
+/* EMPIEZA BLOQUE TEMAS */
+div.bloquetemas {
+    width: 60%;
+    display: inline;
+}
+div.bloquetemasflex-container {
+    /* max-width: 80%; */
 
-
-.bloquetema {
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
+}
+div.bloquecontainer {
+    /* display: inline; */
 }
 
-.imgtema {
-    max-width: 104px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+img.imgtema {
+    width: 104px;
+    margin: 5%;
 }
 
-
+/* 
 .skewdos {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skewY(-5deg);
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    padding: 10% 0 0 0;
     margin-top: 20%;
 
 
 }
 
 .ultimasnovedadescontainer {
-    transform: skewY(5deg);
     padding-bottom: 30%;
 
 
@@ -334,7 +348,7 @@ a {
     padding-top: 10%;
 
 
-}
+} */
 
 @media screen and (min-width: 320px) {
 
@@ -368,5 +382,37 @@ a {
         flex-basis: calc(100%/2);
         max-width: 50%;
 
+    }
+
+    div.invitadosflex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+    }
+    img.estelar {
+        flex-basis: calc(100%/3);
+
+    }
+
+    div.bloquetemasflex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+    }
+    .bloquetemas {
+        flex-basis: calc(80%/4);
+        float: left;
+    } 
+    img.imgtema {
+
+        float: left;
+    }
+    h3 {
+  
+        float: left;
     }
     } 
