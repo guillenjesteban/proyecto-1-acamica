@@ -14,6 +14,7 @@ nav {
     padding: 6%;
     align-items: center;
 }
+
 p {
     font-family: 'IBM Plex Mono', monotype;
     font-weight: 400;
@@ -36,7 +37,6 @@ h3 {
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
-    /* text-align: center; */
 }
 
 a {
@@ -363,102 +363,6 @@ a.a-icons {
 
 @media screen and (min-width: 360px) {
 
-    header {
-        margin-left: 15%;
-    }
-
-    div.podcastflex-cointainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    
-    }
-    
-    div.podcast {
-          flex-basis: calc(100%/2);
-          margin: 3%;
-          float: left;
-          width: 90%;
-          height: 90%;
-    
-    }
-    div.sectioniphonecontainer {
-        margin-top: 0%;
-    }
-
-    div.sectioniphoneflex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: -7%;
-    }
-
-    img.iphone {
-        max-width: 457.6px;
-    }
-    div.dedondevenimos {
-        float:left;
-        flex-basis: calc(100%/2);
-        max-width: 50%;
-
-    }
-
-    div.invitadosflex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: space-around;
-
-    }
-    img.estelar {
-        flex-basis: calc(100%/3);
-        width: 450px;
-
-    }
-
-    ul.bloque-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        width: 80%;
-        margin: 0 0 0 10%;
-        padding: 0;
-
-    }
-    li.bloquetemas {
-        flex-basis: calc(100%/4);
-        float: left;
-    } 
-
-    .sectionskew {
-        padding: 10% 0 15% 0;
-        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-    }
-
-    div.footer-flexcontainer {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 5%;
-    }
-    .footericons {
-        width: 20%;
-    }
-    .pfooter {
-        padding: 0;
-        margin: 0
-    }
-    footer {
-        margin-top: 0px;
-    }
-
 
     /* MENU HAMBURGUESA MEDIA QUERY */
 
@@ -493,26 +397,126 @@ a.a-icons {
 
     }
 
+    /* header media query */
+    header {
+        margin-left: 15%;
+    }
     span.blue-dot {
-    color: #0000EC;
-}
-.skewdos {
-    padding: 5% 0 5% 0;
-}
-button {
-    padding: 1%;
-    margin-top: 2%;
+        color: #0000EC;
+    }
+    button {
+        padding: 1%;
+        margin-top: 2%;
+    }
+    span.saltodelinea {
+        display: block;
+    }
 
+    /* podcasts media query */
+    .sectionskew {
+        padding: 10% 0 15% 0;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    }
 
-}
-div.dedondevenimoscontainer {
+    div.podcastflex-cointainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    div.podcast {
+          flex-basis: calc(100%/2);
+          margin: 3%;
+          float: left;
+          width: 90%;
+          height: 90%;
+    
+    }
+
+    .h2episodios {
+        margin: 0;
+       } 
+
+    /* iphone media query */
+    div.sectioniphonecontainer {
+        margin-top: 0%;
+    }
+
+    div.sectioniphoneflex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: -7%;
+    }
+
+    img.iphone {
+        max-width: 457.6px;
+    }
+
+    div.dedondevenimoscontainer {
     width: 34%;
-} 
-span.saltodelinea {
-    display: block;
-}
+    } 
 
-.h2episodios {
- margin: 0;
-} 
+    /* invitados estelares query */
+
+    div.invitadosflex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+
+    }
+    
+    img.estelar {
+        flex-basis: calc(100%/3);
+        width: 450px;
+
+    }
+    /* bloque temas query */
+
+    ul.bloque-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 0 0 10%;
+        padding: 0;
+
+    }
+    li.bloquetemas {
+        flex-basis: calc(100%/4);
+        float: left;
+    } 
+  
+    /* ultimas novedades query */
+    .skewdos {
+        padding: 5% 0 5% 0;
+    }
+
+    /* foot query */
+    div.footer-flexcontainer {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .footericons {
+        width: 20%;
+    }
+    .pfooter {
+        padding: 0;
+        margin: 0
+    }
+    footer {
+        margin-top: 0px;
+    }
+
 }
