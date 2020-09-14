@@ -371,6 +371,10 @@ a.a-icons {
 
 @media screen and (min-width: 360px) {
 
+    header {
+        margin-left: 15%;
+    }
+
     div.podcastflex-cointainer {
         display: flex;
         flex-direction: row;
