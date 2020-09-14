@@ -35,7 +35,7 @@ h3 {
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 a {
     text-align: left;
@@ -81,7 +81,7 @@ label {
     
 }
 
-li {
+.menu li {
     display: block;
     background: #0000EC;
     box-sizing: content-box;
@@ -181,7 +181,7 @@ h2 {
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    max-width: 80%;
+    /* max-width: 80%; */
     margin-left: 5%;
 
 }  
@@ -223,6 +223,7 @@ section {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
     padding: 10% 0 50% 0;
+    overflow: hidden;
 
 }
 
@@ -253,7 +254,7 @@ div.sectioniphoneflex-container {
 }
 
 div.imageniphone {
-    /* position: relative; */
+    position: relative;
     width: 100vw;
     max-width: 90%;
     text-align: center;
@@ -289,16 +290,27 @@ img.estelar {
     text-decoration: line-through;
 } 
 /* EMPIEZA BLOQUE TEMAS */
-div.bloquetemas {
-    width: 60%;
-    display: inline;
+
+ul.bloque-container {
+    width: 100%;
+    margin: auto;
+
+}
+
+
+li.bloquetemas {
+    width: 100%;
+    text-align: center;
+    background: white;
+    list-style: none;
+    display: inline-block;
+    /* padding-left: 25%; */
+
+    
 }
 div.bloquetemasflex-container {
     /* max-width: 80%; */
 
-}
-div.bloquecontainer {
-    /* display: inline; */
 }
 
 img.imgtema {
@@ -306,7 +318,7 @@ img.imgtema {
     margin: 5%;
 }
 
-/* 
+
 .skewdos {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
@@ -318,7 +330,16 @@ img.imgtema {
 
 .ultimasnovedadescontainer {
     padding-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+
+}
+
+button.episodesbutton {
+    margin: 3% 0 0 5%;
+    padding: 1%;
 
 }
 
@@ -348,7 +369,7 @@ a {
     padding-top: 10%;
 
 
-} */
+}
 
 @media screen and (min-width: 320px) {
 
@@ -396,23 +417,19 @@ a {
 
     }
 
-    div.bloquetemasflex-container {
+    ul.bloque-container {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
 
     }
-    .bloquetemas {
-        flex-basis: calc(80%/4);
+    li.bloquetemas {
+        flex-basis: calc(100%/4);
         float: left;
     } 
-    img.imgtema {
 
-        float: left;
-    }
-    h3 {
-  
-        float: left;
+    .sectionskew {
+        padding: 10% 0 10% 0;
     }
     } 
