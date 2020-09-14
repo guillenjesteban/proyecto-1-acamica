@@ -11,7 +11,7 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5%;
+    padding: 6%;
     align-items: center;
 }
 p {
@@ -38,15 +38,22 @@ h3 {
     letter-spacing: 0;
     /* text-align: center; */
 }
+
 a {
     text-align: left;
     padding: 0;
     margin: 0;
     color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
 }
 
 .menu ul {
-    /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
     width: 100%;
     position: absolute;
     right: 0;
@@ -116,8 +123,8 @@ input[type="checkbox"]:checked ~ ul {
     z-index: 2;
     position: absolute;
 }
-/* menu hamburguesa */
 
+/* menu hamburguesa */
 .menu span {
     display: block;
     width: 25px;
@@ -164,7 +171,6 @@ input:checked ~ ul {
 /* comienza header */
 header {
     width: 100vw;
-    /* height: 70vh; */
 }
 h1 {
     font-family: 'IBM Plex Sans', monotype;
@@ -176,6 +182,11 @@ h1 {
     
 }
 
+.tachado {
+    text-decoration: line-through;
+} 
+
+
 h2 {
     font-family: 'IBM Plex Sans', monotype;
     font-weight: 400;
@@ -183,11 +194,10 @@ h2 {
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    /* max-width: 80%; */
-    margin-left: 5%;
+    padding: 2% 5% 2% 5%;
 
 }  
-/* cambiar a medium la tipografia en button, cambiar en libreria html tmb */
+
 button {
     font-family: 'IBM Plex Mono', monotype;
     font-weight: 500;
@@ -205,7 +215,17 @@ button {
     width: 90%;
     height: 20%;
     max-width: 320px;
+    padding: 3%;
 
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    border: none;
+}
+
+button a:hover {
+    color:white;
 }
 
 /* comienza seccion podcasts */
@@ -216,43 +236,33 @@ section {
 .h2episodios {
     color: white;
     text-align: left;
-    margin-left: 7% 0 7% 0;
-
-
+    padding: 2% 5% 0 5%;
 }
 
 .sectionskew {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
     padding: 10% 0 50% 0;
     overflow: hidden;
-
 }
-
 
 div.podcast {
     margin: 5%;
     max-width: 584px;
     max-height: 232px;
     width: 90%;
-
 }
 
 /* comienza seccion iphone */
-
-
 .h2novedades {
     color: white;
     text-align: center;
 
 }
 
-
 div.sectioniphoneflex-container {
-    margin-left: 5%;
     padding-top: -15%;
-    /* position: absolute; */
-
+    margin-top: -40%;
 
 }
 
@@ -267,32 +277,26 @@ div.imageniphone {
 }
 
 img.iphone {
-    max-width: 320px;
-    /* min-width: 320px;
-    max-width: 457.6px;
-    padding:0; */
+    max-width: 90%;
 
 }
+
 /* comienza seccion grilla de imagenes */
-
+div.invitadosflex-container {
+    display: flex;
+    flex-direction: column;
+}
 div.invitadosestelares {
-    /* position: absolute; */
     margin: 0;
-
-
 }
 
 img.estelar {
     width:100%;
-    /* position: relative;  */
     margin-right: 0;
 
 }
 
-.tachado {
-    text-decoration: line-through;
-} 
-/* EMPIEZA BLOQUE TEMAS */
+/* empieza bloque temas */
 
 ul.bloque-container {
     width: 100%;
@@ -308,13 +312,7 @@ li.bloquetemas {
     background: white;
     list-style: none;
     display: inline-block;
-    /* padding-left: 25%; */
-
     
-}
-div.bloquetemasflex-container {
-    /* max-width: 80%; */
-
 }
 
 img.imgtema {
@@ -322,18 +320,16 @@ img.imgtema {
     margin: 5%;
 }
 
+/* empieza seccion ultimas novedades */
 
 .skewdos {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
-    padding: 10% 0 0 0;
-    margin-top: 20%;
-
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 10% 0 30% 0;
 
 }
 
 .ultimasnovedadescontainer {
-    padding-bottom: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,18 +337,8 @@ img.imgtema {
 
 }
 
-button.episodesbutton {
-    margin: 3% 0 0 5%;
-    padding: 1%;
+/* comienza footer */
 
-}
-/* COMIENZA FOOTER */
-
-/* div.footer-flexcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 footer {
     background-color: white;
     width: 100%;
@@ -367,11 +353,12 @@ footer {
     width: 100%;
 
 }  
-a {
+a.a-icons {
     text-align: center;
     display: inline-block;
     margin: 4.5%;
     padding:1%;
+    color: black;
 }  
 
 .pfooter {
@@ -380,8 +367,9 @@ a {
 
 
 }
+/* Comienza media queries */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 360px) {
 
     div.podcastflex-cointainer {
         display: flex;
@@ -400,13 +388,17 @@ a {
           height: 90%;
     
     }
+    div.sectioniphonecontainer {
+        margin-top: 0%;
+    }
 
     div.sectioniphoneflex-container {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        margin-top: -7%;
     }
 
     img.iphone {
@@ -438,6 +430,9 @@ a {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+        width: 80%;
+        margin: 0 0 0 10%;
+        padding: 0;
 
     }
     li.bloquetemas {
@@ -446,13 +441,13 @@ a {
     } 
 
     .sectionskew {
-        padding: 10% 0 10% 0;
+        padding: 10% 0 15% 0;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     }
 
     div.footer-flexcontainer {
         display:flex;
         flex-direction: row;
-        wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         margin-left: 5%;
@@ -470,9 +465,7 @@ a {
 
 
     /* MENU HAMBURGUESA MEDIA QUERY */
-    .menu span {
-        /* display: none; */
-    }
+
     .menu ul {
         overflow: visible;
         position: unset;
@@ -494,4 +487,34 @@ a {
     .menu ul li a  {
         color: #060A24;
     }
-    } 
+    .menu ul li a:hover  {
+        color: #00F3BB;
+        text-decoration:line-through;
+
+    }
+    .menu ul li a:active  {
+        opacity: 56%;
+
+    }
+
+    span.blue-dot {
+    color: #0000EC;
+}
+.skewdos {
+    padding: 5% 0 5% 0;
+}
+button {
+    padding: 1%;
+
+}
+div.dedondevenimoscontainer {
+    width: 34%;
+} 
+span.saltodelinea {
+    display: block;
+}
+
+.h2episodios {
+ margin: 0;
+} 
+}
