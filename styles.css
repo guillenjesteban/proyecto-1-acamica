@@ -41,6 +41,7 @@ a {
     text-align: left;
     padding: 0;
     margin: 0;
+    color: black;
 }
 
 .menu ul {
@@ -280,7 +281,7 @@ div.invitadosestelares {
 }
 
 img.estelar {
-    max-width:450px;
+    width:100%;
     /* position: relative;  */
     margin-right: 0;
 
@@ -294,6 +295,7 @@ img.estelar {
 ul.bloque-container {
     width: 100%;
     margin: auto;
+    padding: 0;
 
 }
 
@@ -342,7 +344,13 @@ button.episodesbutton {
     padding: 1%;
 
 }
+/* COMIENZA FOOTER */
 
+/* div.footer-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 footer {
     background-color: white;
     width: 100%;
@@ -410,10 +418,12 @@ a {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
+        justify-content: space-around;
 
     }
     img.estelar {
         flex-basis: calc(100%/3);
+        width: 450px;
 
     }
 
@@ -431,5 +441,24 @@ a {
 
     .sectionskew {
         padding: 10% 0 10% 0;
+    }
+
+    div.footer-flexcontainer {
+        display:flex;
+        flex-direction: row;
+        wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .footericons {
+        width: 20%;
+    }
+    .pfooter {
+        padding: 0;
+        margin: 0
+    }
+    footer {
+        margin-top: 0px;
     }
     } 
