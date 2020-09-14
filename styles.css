@@ -12,6 +12,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 5%;
+    align-items: center;
 }
 p {
     font-family: 'IBM Plex Mono', monotype;
@@ -240,17 +241,18 @@ div.podcast {
 /* comienza seccion iphone */
 
 
+.h2novedades {
+    color: white;
+    text-align: center;
+
+}
+
+
 div.sectioniphoneflex-container {
     margin-left: 5%;
     padding-top: -15%;
     /* position: absolute; */
 
-
-}
-
-.h2novedades {
-    color: white;
-    text-align: center;
 
 }
 
@@ -265,10 +267,10 @@ div.imageniphone {
 }
 
 img.iphone {
-    width: 90%;
-    min-width: 320px;
+    max-width: 320px;
+    /* min-width: 320px;
     max-width: 457.6px;
-    padding:0;
+    padding:0; */
 
 }
 /* comienza seccion grilla de imagenes */
@@ -406,6 +408,10 @@ a {
         justify-content: space-around;
         align-items: center;
     }
+
+    img.iphone {
+        max-width: 457.6px;
+    }
     div.dedondevenimos {
         float:left;
         flex-basis: calc(100%/2);
@@ -460,5 +466,32 @@ a {
     }
     footer {
         margin-top: 0px;
+    }
+
+
+    /* MENU HAMBURGUESA MEDIA QUERY */
+    .menu span {
+        /* display: none; */
+    }
+    .menu ul {
+        overflow: visible;
+        position: unset;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .menu span {
+        height: 0px;
+    }
+    nav {
+        margin-right: 5%;
+    }
+
+    .menu li {
+        background: white;
+    }
+    .menu ul li a  {
+        color: #060A24;
     }
     } 
