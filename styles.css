@@ -258,7 +258,6 @@ div.podcast {
 }
 
 div.sectioniphoneflex-container {
-    padding-top: -15%;
     margin-top: -40%;
 
 }
@@ -338,11 +337,7 @@ img.imgtema {
 
 footer {
     background-color: white;
-    width: 100%;
-    position:relative;
-    content: 100%;
     align-content: center;
-    margin-top: -15%
 }
 .footericons {
     text-align: center;
