@@ -398,7 +398,7 @@ a.a-icons {
     }
 
     /* header media query */
-    header {
+    div.header-container {
         margin-left: 15%;
     }
     span.blue-dot {
